@@ -15,15 +15,13 @@ public class Artist {
     private String genre;
     private int hour;
     private int mins;
-    private Roadie roadie;
     
-    public Artist(String name, String genre, int hour, int mins, Roadie roadie){
+    public Artist(String name, String genre, int hour, int mins){
         
         this.name = name;
         this.genre = genre;
         this.hour = hour;
         this.mins = mins;
-        this.roadie = new Roadie(roadie);
     }
     
     public Artist(Artist artist){
@@ -38,8 +36,7 @@ public class Artist {
         
         String str = ("\nBand/Performer Name: " + name +
                       "\nGenre: " + genre +
-                      "\nTime of Performance: " + hour + ":" + mins +
-                      "\n" + roadie);
+                      "\nTime of Performance: " + hour + ":" + mins);
         
         return str;
     }

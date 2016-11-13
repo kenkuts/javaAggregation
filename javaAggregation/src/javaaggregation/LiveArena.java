@@ -14,12 +14,14 @@ public class LiveArena {
     private String name;
     private Artist artist;
     private Personnel personnel;
+    private Roadie roadie;
     
-    public LiveArena(String name, Artist artist, Personnel personnel){
+    public LiveArena(String name, Artist artist, Personnel personnel, Roadie roadie){
         
         this.name = name;
         this.artist = new Artist(artist);
         this.personnel = new Personnel(personnel);
+        this.roadie = new Roadie(roadie);
     }
     
     @Override
@@ -27,7 +29,8 @@ public class LiveArena {
         
        String str = ("\nArena Name: " + name +
                       "\n" + artist +
-                      "\n" + personnel);
+                      "\n" + personnel +
+                      "\n" + roadie);
         
         return str;
     }

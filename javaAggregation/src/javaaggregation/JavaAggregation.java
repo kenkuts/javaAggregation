@@ -18,9 +18,9 @@ public class JavaAggregation {
         
         System.out.println("This program creates a concert live event");
         Roadie roadie = new Roadie("Jonh Wick","Manager");
-        Artist artist = new Artist("Kaskasde", "Electronic Dance Music",11,30, roadie);
+        Artist artist = new Artist("Kaskasde", "Electronic Dance Music",11,30);
         Personnel personnel = new Personnel("Pat Tillman","Security",8216);
-        LiveArena arena = new LiveArena("Madison Square Garden",artist, personnel);
+        LiveArena arena = new LiveArena("Madison Square Garden",artist, personnel, roadie);
         
         System.out.println(artist);
         System.out.println(arena);
